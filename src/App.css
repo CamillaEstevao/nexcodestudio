@@ -586,3 +586,159 @@ img {
     font-size: 54px;
   }
 }
+@media (max-width: 1024px) {
+  .header {
+    height: 72px;
+    padding: 0 5%;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 120px 5% 50px;
+  }
+
+  .hero-content {
+    width: 100%;
+    max-width: 520px;
+    padding-top: 0;
+  }
+
+  .hero h1 {
+    font-size: 52px;
+  }
+
+  .hero-showcase {
+    opacity: 0.45;
+    justify-content: center;
+    padding-right: 0;
+  }
+
+  .hero-device {
+    width: 110%;
+    max-width: none;
+  }
+
+  .hero-benefits {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 80px;
+    gap: 28px;
+  }
+
+  .about,
+  .process,
+  .cta,
+  .footer {
+    grid-template-columns: 1fr;
+  }
+
+  .services-grid,
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .header {
+    height: 68px;
+  }
+
+  .logo img {
+    width: 135px;
+  }
+
+  .hero {
+    padding: 105px 6% 40px;
+  }
+
+  .hero::before {
+    background: linear-gradient(
+      90deg,
+      rgba(0,0,0,0.96) 0%,
+      rgba(0,0,0,0.88) 55%,
+      rgba(0,0,0,0.55) 100%
+    );
+  }
+
+  .hero-content {
+    width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+    line-height: 1.04;
+    letter-spacing: -2px;
+  }
+
+  .hero p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-showcase {
+    inset: 0;
+    opacity: 0.32;
+  }
+
+  .hero-device {
+    width: 170%;
+    transform: translateX(18%);
+  }
+
+  .hero-benefits {
+    grid-template-columns: 1fr;
+    margin-top: 55px;
+    gap: 22px;
+  }
+
+  .services,
+  .process,
+  .projects,
+  .testimonials,
+  .about-text,
+  .cta,
+  .footer {
+    padding: 60px 6%;
+  }
+
+  .about h2,
+  .services h2,
+  .projects h2,
+  .testimonials h2,
+  .cta h2 {
+    font-size: 36px;
+  }
+
+  .stats,
+  .services-grid,
+  .projects-grid,
+  .process-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .about-image {
+    min-height: 360px;
+  }
+
+  .project-card img {
+    height: 220px;
+  }
+}
